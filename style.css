@@ -1,0 +1,88 @@
+:root {
+  --mainColor: #eaeaea;
+  --secondColor: #ffffff;
+  --borderColor: #c1c1c1;
+  --mainText: black;
+  --subText: #575757;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #0099ff;
+}
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: var(--mainText);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 56px;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 16px;
+}
+
+p,
+li,
+span,
+lable,
+input,
+textarea {
+  color: var(--subText);
+}
+
+.s1 {
+  background-color: var(--mainColor);
+  border-bottom: 1px solid var(--borderColor);
+  overflow: auto;
+}
+.s2 {
+  background-color: var(--secondColor);
+  border-bottom: 1px solid var(--borderColor);
+  overflow: auto;
+}
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .main-container {
+    width: 95%;
+  }
+}
