@@ -1,6 +1,6 @@
 :root {
   --mainColor: #212334;
-  --secondColor: #24283B;
+  --secondColor: #2d3144;
   --mainText: #e2e3e7;
   --unselectedTextColor:#a4a7b0;
   --highlightColor: #fd9e41;
@@ -14,7 +14,6 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Lato", sans-serif;
   color:#ffffff;
 }
 
@@ -26,24 +25,12 @@ html, body {
 
 a {
   text-decoration: none;
-  color: #0099ff;
 }
+
 ul {
   list-style: none;
 }
 
-h1,h2,h3,h4,h5,h6,strong {
-  color: var(--mainText);
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-}
-
-h1 {font-size: 56px;}
-h2 {font-size: 36px;}
-h3 {font-size: 28px;}
-h4 {font-size: 24px;}
-h5 {font-size: 20px;}
-h6 {font-size: 16px;}
 
 p,li,span,lable,input,textarea {
   color: var(--subText);
@@ -63,6 +50,7 @@ p,li,span,lable,input,textarea {
   background-color: var(--secondColor);
   border-bottom: 1px solid var(--borderColor);
   overflow: auto;
+  padding-bottom: 1em;
 }
 
 .section__top{
@@ -74,6 +62,24 @@ p,li,span,lable,input,textarea {
   border-radius: 2px;
 }
 
+.centered{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-card{
+  border-radius: 10px;
+  border:1px solid var(--highlightColor);
+  padding:.5em;
+  margin:10px 0
+}
+
+.project-card:hover{
+  -webkit-box-shadow: 0px 0px 8px 5px rgba(253,158,65,1);
+-moz-box-shadow: 0px 0px 8px 5px rgba(253,158,65,1);
+box-shadow: 0px 0px 8px 5px rgba(253,158,65,1);
+}
 .dark{
   background-color: var(--mainColor);
 }
