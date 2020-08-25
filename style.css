@@ -77,10 +77,67 @@ p,li,span,lable,input,textarea {
 
 .project-card:hover{
   -webkit-box-shadow: 0px 0px 8px 5px rgba(253,158,65,1);
--moz-box-shadow: 0px 0px 8px 5px rgba(253,158,65,1);
-box-shadow: 0px 0px 8px 5px rgba(253,158,65,1);
+  -moz-box-shadow: 0px 0px 8px 5px rgba(253,158,65,1);
+  box-shadow: 0px 0px 8px 5px rgba(253,158,65,1);
 }
 .dark{
   background-color: var(--mainColor);
 }
 
+.card-container{
+  position: relative;
+  display:flex;
+  justify-content: space-between;
+}
+.card-img{
+  max-height:200px;
+  max-width:300px;
+}
+.card-container .card-p {
+  position: relative;
+}
+.card-container .card-p .card-face{
+  width:300px;
+  height:200px;
+  transition: 0.5s;
+}
+
+.card-container .card-p .card-face.card-face1 {
+  position: relative;
+  background:var(--mainColor);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  z-index:1
+}
+
+.card-container .card-p .card-face.card-face1 .project-desc{
+  opacity:0.2;
+  transition: 0.5s;
+}
+
+.card-container .card-p:hover .card-face.card-face1 .project-desc{
+  opacity: 1;
+  
+}
+
+.card-container .card-p .card-face.card-face2 {
+  position: relative;
+  background:var(--secondColor);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:5px;
+  -webkit-box-shadow: 0px 0px 8px 5px rgba(253,158,65,1);
+  -moz-box-shadow: 0px 0px 8px 5px rgba(253,158,65,1);
+  box-shadow: 0px 0px 8px 5px rgba(253,158,65,1);
+}
+
+.card-container .card-p .card-face.card-face2 .project-desc p {
+ margin:0;
+}
+
+.btn-container{
+  display:flex;
+  justify-content: space-between;
+}
