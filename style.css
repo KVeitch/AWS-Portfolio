@@ -7,7 +7,7 @@
   --lowlightColor:#594237;
   --borderColor: #a4a7b0;
   --subText: #c7c7c7;
-  --borderRadius:3px;
+  --borderRadius:5px;
 }
 
 
@@ -34,7 +34,8 @@ p,li,span,lable,input,textarea {
   color: var(--subText);
 }
 
-nav{background-color: var(--mainColor);}
+nav {background-color: var(--mainColor);}
+
 .icon {height:20px;}
 
 .s1 {
@@ -56,7 +57,7 @@ nav{background-color: var(--mainColor);}
 
 .img-self {
   height:25vh;
-  border-radius: 2px;
+  border-radius: var(--borderRadius);
 }
 
 .centered {
@@ -159,8 +160,72 @@ nav{background-color: var(--mainColor);}
   justify-content: space-between;
 }
 
-
 .btn-container {
   display:flex;
   justify-content: space-between;
+}
+
+.btn-box {
+  padding-bottom: 25px;
+}
+
+.btn {
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  width:100%;
+  border-radius: var(--borderRadius);
+  border:1px solid var(--highlightColor);
+  background-color:var(--secondColor)
+}
+
+.btn > div{
+display:flex;
+flex-direction: column;
+align-items: start;
+}
+
+.btn p {
+  margin:0;
+  color:#ffffff
+}
+
+.btn-icon {
+  height:45px;
+}
+
+.btn .btn-desc {
+  font-size: .6em;
+  color:var(--highlightColor)
+}
+
+.btn:hover {
+  background-color: var(--highlightColor);
+}
+
+.btn:hover p{
+  color:var(--mainColor)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.icon-credits {
+  width:100%;
+  font-size:.75em;
+  text-align: center;
+  color:#a4a7b0
+}
+
+.icon-credits a{
+  text-decoration: none;
+  color:#a4a7b0
 }
