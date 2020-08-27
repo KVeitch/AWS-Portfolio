@@ -40,15 +40,15 @@ p,li,span,lable,input,textarea {
 
 .s1 {
   background-color: var(--mainColor);
-  border-bottom: 1px solid var(--borderColor);
+  border-bottom: 1px solid var(--highlightColor);
   overflow: auto;
   padding:10px 0
 }
 .s2 {
   background-color: var(--secondColor);
-  border-bottom: 1px solid var(--borderColor);
+  border-bottom: 1px solid var(--highlightColor);
   overflow: auto;
-  padding-bottom: 1em;
+  padding: 1em 0;
 }
 
 .section__top {
@@ -150,6 +150,14 @@ p,li,span,lable,input,textarea {
  text-align: justify;
  text-justify: inter-word;
 }
+
+.card-face2 > .project-desc{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+}
+
 
 .btn-container {
   display:flex;
