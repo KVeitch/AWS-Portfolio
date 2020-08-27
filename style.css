@@ -77,7 +77,6 @@ p,li,span,lable,input,textarea {
 }
 .card-img {
   max-height:200px;
-  max-width:300px;
 }
 .card-container .card-p {
   position: relative;
@@ -111,7 +110,10 @@ p,li,span,lable,input,textarea {
 .card-container .card-p .card-face.card-face1 .project-desc {
   opacity:0.3;
   transition: 0.5s;
-  
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card-container .card-p:hover .card-face.card-face1 .project-desc {
@@ -119,10 +121,10 @@ p,li,span,lable,input,textarea {
 }
 
 .card-container .card-p .card-face.card-face1 .project-desc img {
-  max-width:150px;
+
 }
 .card-container .card-p .card-face.card-face1 .project-desc h3 {
-  margin:10px 0 0;
+  margin:10px 0;
   text-align:center;
   font-size:1.5em;
 }
