@@ -34,8 +34,7 @@ p,li,span,lable,input,textarea {
   color: var(--subText);
 }
 
-.navbar-nav {background-color: var(--mainColor);}
-
+nav{background-color: var(--mainColor);}
 .icon {height:20px;}
 
 .s1 {
