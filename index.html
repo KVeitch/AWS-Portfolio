@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
     <title>Kirk Vetich</title>
@@ -185,20 +186,6 @@
             </div>
 
           </div>
-
-          <div class="col-sm centered">
-            <div class="btn" role="button">
-              <div>
-                <p class="btn-title">
-                  Email
-                </p>
-                <p class="btn-desc">
-                  kirk.a.veitch @ gmail.com
-                </p>
-              </div>
-                <img src="./assests/images/email-color.svg" alt="" class="btn-icon">
-              </div>
-          </div>
           <div class="col-sm centered">
             <div class="btn" role="button" onclick="window.open('https://github.com/KVeitch')">
               <div>
@@ -213,6 +200,20 @@
               <img src="./assests/images/github-image.svg" alt="" class="btn-icon">
             </div>
           </div>
+          <div class="col-sm centered">
+            <div class="btn" role="button">
+              <div>
+                <p class="btn-title">
+                  Email
+                </p>
+                <p class="btn-desc">
+                  kirk.a.veitch @ gmail.com
+                </p>
+              </div>
+                <img src="./assests/images/email-color.svg" alt="" class="btn-icon">
+              </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -222,7 +223,45 @@
 
 
     <section class="s2">
-      <div class="container">Contact Form</div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm col-sm-offset-2 m-auto">
+            <div class="contact-form">
+              <h2>Get in Touch</h2>
+              <form action="/examples/actions/confirmation.php" method="post">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="inputName">Name</label>
+                      <input type="text" class="form-control" id="inputName" required>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="inputEmail">Email</label>
+                      <input type="email" class="form-control" id="inputEmail" required>
+                    </div>
+                  </div>
+                </div>            
+                <div class="form-group">
+                  <label for="inputSubject">Subject</label>
+                  <input type="text" class="form-control" id="inputSubject" required>
+                </div>
+                <div class="form-group">
+                  <label for="inputMessage">Message</label>
+                  <textarea class="form-control" id="inputMessage" rows="5" required></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary"><span class="fa fa-paper-plane"></span> Send</button>
+                </div>            
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
     </section>
 
 
